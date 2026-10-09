@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-ThinItalic.woff') format(woff);
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-Italic.woff') format(woff);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-MediumItalic.woff') format(woff);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-BoldItalic.woff') format(woff);
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-BlackItalic.woff') format(woff);
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-Thin.woff') format(woff);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-Light.woff') format(woff);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-Medium.woff') format(woff);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./fonts/CeraPro-Bold.woff') format(woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/CeraPro-Black.woff') format(woff);
+    font-weight: 900;
+    font-style: normal;
+}
+
+.pageContainer{
+    padding: 30px 120px 52px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  rgba(70, 163, 88, 0.50);
+    margin-bottom: 12px;
+}
+
+ul.MenuList{
+    display: flex;
+    gap: 50px;
+}
+
+li.MenuListItem{
+    font-family: "Cera Pro";
+    padding: 8px 0 25px;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 3px solid transparent;
+}
+
+li.MenuListItem.active{
+    font-weight: 700;
+    border-color: #46A358;
+}
+
+button.headerButton {
+    font-family: "Cera Pro";
+    display: flex;
+    align-items: center;
+    border: none;
+    color: #FFF;
+    font-weight: 500;
+    gap: 4px;
+    padding: 8px 17px 7px;
+    border-radius: 6px;
+    background: #46A358;
+    margin-bottom: 8px;
+}
+
+div.mainBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+}
+
+div.mainContent{
+    display: block;
+    margin: 68px 43px;
+    padding-bottom: 85px;
+}
+
+h1.homePage{
+    font-family: "Cera Pro";
+    color: #3D3D3D;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px; /* 100% */
+    text-transform: uppercase;
+    margin: 7px 30px 5px 0px;
+}
+
+h1.homePage::after{
+    font-family: "Cera Pro";
+    content: " " attr(data-last);
+    color: #46A358;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+h2.homePage{
+    font-family: "Cera Pro";
+    margin: 68px 43x 7px;
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+p.mainText{
+    font-family: "Cera Pro";
+    color: #727272;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin: 3px 5px 44px 0;
+}
+
+button.cta{
+    font-family: "Cera Pro";
+    display: flex;
+    align-items: center;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+    border-radius: 6px;
+    background: #46A358;
+    padding:  11px 27px 9px 26px;
+}
+
+div.imageContainer{
+    width: 507px;
+    height: 450px;
+    background: url('./images/big_plant_hp.png') no-repeat center / cover;
+}
+
+img.small{
+    padding: 298px 317px 17px 55px;
+}
