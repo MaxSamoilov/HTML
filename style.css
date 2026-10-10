@@ -118,7 +118,7 @@ button.headerButton {
     color: #FFF;
     font-weight: 500;
     gap: 4px;
-    padding: 8px 17px 7px;
+    padding: 7px 17px 8px;
     border-radius: 6px;
     background: #46A358;
     margin-bottom: 8px;
@@ -145,7 +145,7 @@ h1.homePage{
     font-weight: 900;
     line-height: 70px; /* 100% */
     text-transform: uppercase;
-    margin: 5px 0;
+    margin: 7px 0;
 }
 
 h1.homePage::after{
