@@ -182,3 +182,20 @@ li.filtersOption.active{
     font-weight: 700;
     line-height: 40px; /* 266.667% */
 }
+
+h3.promoHeadline{
+    color: #46A358;
+    font-family: "Hanging Letters";
+    font-size: 65px;
+    line-height: 65px; /* 100% */
+}
+
+p.saleOffer{
+    color: #3D3D3D;
+    text-align: center;
+    font-family: "Cera Pro";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 69.565% */
+}
