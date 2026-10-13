@@ -68,10 +68,3 @@
     font-weight: 900;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'Hanging Letters';
-    src: url('./fonts/Hanged\ Letters.ttf') format(true-type);
-    font-weight: 700;
-    font-style: normal;
-}

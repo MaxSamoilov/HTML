@@ -133,20 +133,31 @@ div.imageContainer{
     background-position: center , left bottom;
     background-repeat: no-repeat , no-repeat;
 }
+div.shop{
+    display: flex;
+    margin: 45px 120px;
+}
 
 div.sidebar{
     display: flex;
     flex-direction: column;
     background: solid #FBFBFB;
     align-items:start;
-    justify-content: space-between;
 }
 
 div.filters{
     display: flex;
+    width: 100%;
     flex-direction: column;
-    gap: 30px;
-    margin: 14px 18px;
+    margin: 0 18px;
+}
+
+div.filterOptions{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    justify-content: space-between;
+    margin: 30px 12px;
 }
 
 h3.filtersHead{
@@ -162,7 +173,6 @@ ul.filters{
     display: flex;
     gap: 30px;
     flex-direction: column;
-    margin: 0 12px;
 }
 
 li.filtersOption{
@@ -183,19 +193,56 @@ li.filtersOption.active{
     line-height: 40px; /* 266.667% */
 }
 
-h3.promoHeadline{
-    color: #46A358;
-    font-family: "Hanging Letters";
-    font-size: 65px;
-    line-height: 65px; /* 100% */
+div.promo{
+    display: flex;
+    width: 310px;
+    height: 470px;
+    background: url('./images/Sale.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-p.saleOffer{
+p.thumbValue{
     color: #3D3D3D;
-    text-align: center;
     font-family: "Cera Pro";
-    font-size: 23px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+}
+
+p.thumbValue::after{
+    content: " " attr(data-last);
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
-    line-height: 16px; /* 69.565% */
+    line-height: 16px;
+}
+
+div.thumb{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap:15px;
+    margin-bottom: 45px;
+}
+
+input.thumb{
+    width: 215px;
+}
+
+button.thumb{
+    border-radius: 6px;
+    border: none;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    padding: 8px 25px;
 }
