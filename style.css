@@ -7,7 +7,7 @@
 }
 
 .entryContainer{
-    padding: 30px 120px 52px;
+    padding: 35px 120px 75px;
 }
 
 .header{
@@ -104,7 +104,7 @@ p.mainText{
     color: #727272;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px; /* 171.429% */
     margin-bottom: 45px;
 }
@@ -135,21 +135,24 @@ div.imageContainer{
 }
 div.shop{
     display: flex;
-    margin: 45px 120px;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0 120px;
 }
 
 div.sidebar{
     display: flex;
     flex-direction: column;
+    width: 310px;
     background: solid #FBFBFB;
     align-items:start;
 }
 
 div.filters{
     display: flex;
-    width: 100%;
     flex-direction: column;
-    margin: 0 18px;
+    width: 100%;
+    padding: 0 18px;
 }
 
 div.filterOptions{
@@ -227,7 +230,7 @@ div.thumb{
     justify-content: start;
     align-items: start;
     gap:15px;
-    margin-bottom: 45px;
+    margin: 30px 12px;  
 }
 
 input.thumb{
@@ -245,4 +248,115 @@ button.thumb{
     font-weight: 700;
     line-height: 20px; /* 125% */
     padding: 8px 25px;
+}
+
+div.showcase{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.sortOption{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: first baseline;
+    justify-content: space-between;
+}
+
+ul.productNovelty{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    gap: 40px;
+}   
+
+li.itemsType{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+    border-bottom: 2px solid transparent;
+    padding-bottom: 7px;
+}
+
+li.itemsType.active{
+    border-color: #46A358;
+    color: #46A358;
+    font-weight: 700;
+}
+
+label.SortBy{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+}
+
+select.SortBy{
+    border: none;
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+    margin-left: 8px;
+}
+
+ul.productShowcase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 33px;
+    padding: 30px 0 90px;
+}
+
+li.productShowcase{
+    width: 258px;
+}
+
+div.poductCard{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+div.imagecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FBFBFB;
+    width: 258px;
+    height: 300px;
+}
+
+div.text{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+p.poductName{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+}
+
+p.price{
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
 }
