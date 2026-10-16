@@ -1,0 +1,72 @@
+/* HOME PAGE */
+
+button.headerButton {
+    font-family: "Cera Pro";
+    display: flex;
+    align-items: center;
+    border: none;
+    color: #FFF;
+    font-weight: 500;
+    gap: 4px;
+    padding: 7px 17px 8px;
+    border-radius: 6px;
+    background: #46A358;
+    margin-bottom: 8px;
+}
+
+button.cta{
+    font-family: "Cera Pro";
+    display: flex;
+    align-items: center;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    text-transform: uppercase;
+    border-radius: 6px;
+    background: #46A358;
+    padding:  9px 26px 11px;
+    margin-bottom: 85px;
+}
+
+/* SHOP */
+
+input.thumb{
+    width: 215px;
+}
+
+button.thumb{
+    border-radius: 6px;
+    border: none;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    padding: 8px 25px;
+}
+
+button.pagination{
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    background: none;
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px; /* 88.889% */
+}
+
+button.pagination.active{
+    border-radius: 4px;
+    background: #46A358;
+    color: #FFF;
+    font-weight: 700;
+}

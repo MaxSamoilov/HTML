@@ -1,0 +1,183 @@
+/* HOME PAGE */
+
+li.MenuListItem{
+    font-family: "Cera Pro";
+    padding: 8px 0 25px;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 3px solid transparent;
+}
+
+h1.homePage{
+    font-family: "Cera Pro";
+    color: #3D3D3D;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px; /* 100% */
+    text-transform: uppercase;
+    margin: 7px 0;
+}
+
+h1.homePage::after{
+    font-family: "Cera Pro";
+    content: " " attr(data-last);
+    color: #46A358;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+h2.homePage{
+    font-family: "Cera Pro";
+    color: #3D3D3D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+p.mainText{
+    font-family: "Cera Pro";
+    color: #727272;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 171.429% */
+    margin-bottom: 45px;
+}
+
+/* SHOP */
+
+li.itemsType{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+    border-bottom: 2px solid transparent;
+    padding-bottom: 7px;
+}
+
+li.itemsType.active{
+    border-color: #46A358;
+    color: #46A358;
+    font-weight: 700;
+}
+
+h3.filtersHead{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+}
+
+li.filtersOption{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+li.filtersOption.active{
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 266.667% */
+}
+
+label.SortBy{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+}
+
+select.SortBy{
+    border: none;
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+    margin-left: 8px;
+}
+
+p.thumbValue{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+}
+
+p.thumbValue::after{
+    content: " " attr(data-last);
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+p.poductName{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 100% */
+}
+
+p.price{
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+}
+
+p.price::after{
+    content: " " attr(data-last);
+    text-decoration: line-through;
+    color: #A5A5A5;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 88.889% */
+}
+
+p.discount{
+    color: #FFF;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    padding: 8px;
+    background: #46A358;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}

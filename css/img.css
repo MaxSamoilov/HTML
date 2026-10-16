@@ -1,0 +1,20 @@
+/* HOME PAGE */
+
+div.imageContainer{
+    width: 507px;
+    height: 450px;
+    background: url('../images/big_plant_hp.png') , url('../images/small_plant_hp.png');
+    background-position: center , left bottom;
+    background-repeat: no-repeat , no-repeat;
+}
+
+/* SHOP */
+
+div.promo{
+    display: flex;
+    width: 310px;
+    height: 390px;
+    background: url('../images/Sale.png');
+    background-position: center/ fill;
+    background-repeat: no-repeat;
+}
