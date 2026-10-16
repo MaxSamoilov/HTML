@@ -138,6 +138,7 @@ div.shop{
     flex-direction: row;
     gap: 50px;
     padding: 0 120px;
+    margin-bottom: 145px;
 }
 
 div.sidebar{
@@ -174,7 +175,7 @@ h3.filtersHead{
 
 ul.filters{
     display: flex;
-    gap: 30px;
+    gap: 5px;
     flex-direction: column;
 }
 
@@ -199,9 +200,9 @@ li.filtersOption.active{
 div.promo{
     display: flex;
     width: 310px;
-    height: 470px;
+    height: 390px;
     background: url('./images/Sale.png');
-    background-position: center;
+    background-position: center/ fill;
     background-repeat: no-repeat;
 }
 
@@ -310,15 +311,11 @@ select.SortBy{
 
 ul.productShowcase{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 33px;
+    gap: 66px;
     padding: 30px 0 90px;
-}
-
-li.productShowcase{
-    width: 258px;
 }
 
 div.poductCard{
@@ -326,8 +323,27 @@ div.poductCard{
     flex-direction: column;
     gap: 12px;
     position: relative;
+    border-top: 1px solid transparent;
 }
 
+div.poductCard:hover{
+    border-color: #46A358;
+}
+
+div.icons{
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    top: 266px;
+    left: 73px;
+}
+div.poductCard div.icons{
+    display: none;
+}
+
+div.poductCard:hover div.icons{
+    display: flex;
+}
 div.imagecontainer{
     display: flex;
     align-items: center;
@@ -335,6 +351,7 @@ div.imagecontainer{
     background: #FBFBFB;
     width: 258px;
     height: 300px;
+    
 }
 
 div.text{
@@ -359,4 +376,60 @@ p.price{
     font-style: normal;
     font-weight: 700;
     line-height: 16px; /* 88.889% */
+}
+
+p.price::after{
+    content: " " attr(data-last);
+    text-decoration: line-through;
+    color: #A5A5A5;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 88.889% */
+}
+
+p.discount{
+    color: #FFF;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    padding: 8px;
+    background: #46A358;
+    position: absolute;
+    left: 0;
+    top: 14px;
+}
+
+div.pagination{
+    align-self: flex-end;
+}
+
+ul.pagination{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button.pagination{
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    background: none;
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px; /* 88.889% */
+}
+
+button.pagination.active{
+    border-radius: 4px;
+    background: #46A358;
+    color: #FFF;
+    font-weight: 700;
 }
