@@ -18,3 +18,16 @@ div.promo{
     background-position: center/ fill;
     background-repeat: no-repeat;
 }
+
+/* THIRD */
+
+div.image{
+    background: url(../images/extra_1.png);
+    display: flex;
+    position: absolute;
+    width: 292px;
+    height: 292px;
+    bottom: 10px;
+    right: 300px;
+}
+

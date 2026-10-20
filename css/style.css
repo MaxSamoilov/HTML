@@ -172,3 +172,34 @@ ul.pagination{
     flex-direction: row;
     gap: 10px;
 }
+
+div.extraOffers{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 120px;
+    margin-bottom: 140px;
+}
+
+div.offerCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    padding: 35px 30px 40px;
+    background-color: #610cac;
+}
+
+div.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 25px;
+
+}
+
+div.offerText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
