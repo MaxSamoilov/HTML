@@ -9,7 +9,8 @@
 /* HOME PAGE */
 
 .entryContainer{
-    padding: 35px 120px 75px;
+    padding: 0 120px;
+    margin-top: 33px;
 }
 
 .header{
@@ -20,43 +21,84 @@
     margin-bottom: 12px;
 }
 
+ul.buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+li.headerButton{
+    padding-bottom: 15px;
+}
+
+li.icons{
+    padding-bottom: 15px;
+}
+
+li.icons path{
+    fill: #3D3D3D;
+}
+
+li.icons:hover path{
+    fill: #46A358;
+}
+
+
 ul.MenuList{
     display: flex;
     gap: 50px;
 }
 
-li.MenuListItem.active{
-    font-weight: 700;
-    border-color: #46A358;
+ul.subList1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 107%;
+}
+
+li.subItems1 path{
+    fill: #3D3D3D;
+}
+
+li.subItems1:hover path{
+    fill: #FFF;
+}
+
+li.subItems1:hover svg{
+    rotate: 180deg;
+}
+
+ul.subList2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0%;
+    right: -100%;
 }
 
 div.mainBanner{
     display: flex;
-    box-sizing: border-box;
     justify-content: space-between;
-    align-items: top;
     background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+    margin-bottom: 70px;
 }
 
 div.mainContent{
     display: block;
-    margin: 70px 45px;
+    padding: 70px 45px;
 }
 
 /* SHOP */
 
 div.shop{
     display: flex;
-    flex-direction: row;
     gap: 50px;
-    padding: 0 120px;
     margin-bottom: 145px;
 }
 
 div.sidebar{
     display: flex;
     flex-direction: column;
-    width: 310px;
     background: solid #FBFBFB;
     align-items:start;
 }
@@ -65,30 +107,28 @@ div.filters{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0 18px;
-}
-
-div.filterOptions{
-    display: flex;
-    flex-direction: row;
-    align-items: first baseline;
-    justify-content: space-between;
-    margin: 30px 12px;
+    padding: 18px;
 }
 
 ul.filters{
     display: flex;
-    gap: 5px;
     flex-direction: column;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+ul.filterLine{
+    display: flex;
+    justify-content: space-between;
+    min-width: 256px;
 }
 
 div.thumb{
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: start;
     gap:15px;
-    margin: 30px 12px;  
+    margin-bottom: 46px;  
 }
 
 div.showcase{
@@ -98,16 +138,14 @@ div.showcase{
 }
 
 div.sortOption{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: first baseline;
+    display: flex;  
+    align-items: start;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 ul.productNovelty{
     display: flex;
-    flex-direction: row;
     align-items: first baseline;
     gap: 40px;
 }   
@@ -117,11 +155,12 @@ ul.productShowcase{
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 66px;
-    padding: 30px 0 90px;
+    row-gap: 70px;
+    column-gap: 33px;
+    margin-bottom: 90px;
 }
 
-div.poductCard{
+li.productCard{
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -129,32 +168,35 @@ div.poductCard{
     border-top: 1px solid transparent;
 }
 
-div.poductCard:hover{
+li.productCard:hover{
     border-color: #46A358;
 }
 
 div.icons{
     display: flex;
-    gap: 25px;
+    gap: 10px;
     position: absolute;
-    top: 266px;
-    left: 73px;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -15%);
 }
-div.poductCard div.icons{
+
+li.productCard div.icons{
     display: none;
 }
 
-div.poductCard:hover div.icons{
+li.productCard:hover div.icons{
     display: flex;
 }
 
 div.imagecontainer{
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     background: #FBFBFB;
-    width: 258px;
-    height: 300px;  
+    padding: 25px 4px;
+    min-width: 258px;
+    min-height: 334px;
 }
 
 div.text{
@@ -163,43 +205,202 @@ div.text{
     gap: 6px;
 }
 
+.cardbutton path{
+    fill: black;
+}
+
+.cardbutton:hover path{
+    fill: #46A358;
+}
+
 div.pagination{
     align-self: flex-end;
 }
 
 ul.pagination{
     display: flex;
-    flex-direction: row;
     gap: 10px;
 }
 
 div.extraOffers{
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 0 120px;
+    justify-content: space-around;
     margin-bottom: 140px;
 }
 
 div.offerCard{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
     position: relative;
     padding: 35px 30px 40px;
-    background-color: #610cac;
+    background-color: #FBFBFB;  
+    min-width: 586px;
 }
 
 div.content{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    gap: 25px;
-
+    align-items: flex-end;
 }
 
-div.offerText{
+div.blog{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 100px;
+}
+
+div.blockHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+ul.topics{
+    display: flex;
+    gap: 44px;
+}
+
+li.topicCard:hover button.topicButton{
+    color: #46A358;
+} 
+
+li.topicCard:hover button path{
+    fill: #46A358;
+} 
+
+li.topicCard{
+    display: flex;
+    flex-direction: column;
+    min-width: 268px;
+    background: #FBFBFB;
+    gap: 8px;
+    align-content: flex-start;
+}
+
+div.topicContent{
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+    gap: 20px;
+    margin-bottom: 14px;
+}
+
+div.cardText{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+div.newsletters{
+    display: flex;
+    background: #FBFBFB;
+    padding: 33px 25px;
+}
+
+ul.ourCapabilities{
+    display: flex;
+    margin-right: 60px;
+    gap: 35px;
+}
+
+li.Capability{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-left: 35px;
+    border-left: 1px solid #E8F1EA;
+}
+
+li.Capability.first{
+    border-color: transparent;
+}
+
+div.form{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+label.inputLabel{
+    display: flex;
+    flex-direction: column;
+}
+
+label.SortBy{
+    display: flex;
+    align-items: center;
+}
+
+div.inputs{
+    display: flex;
+    min-width:  354px;
+}
+
+div.contacts{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(-90deg, rgba(237, 246, 239, 0.85) 58%, rgba(82, 195, 104, 1));
+    padding: 27px 23px;
+    gap: 265px;
+    border-top: 1px solid #5cca72;
+    border-bottom: 1px solid #5cca72;
+}
+
+ul.contacts{
+    display: flex;
+    gap: 100px;
+}
+
+li.contact{
+    display: flex;
     gap: 10px;
+    align-items: center;
+}
+
+div.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 23px;
+    background: #FBFBFB;
+    border-bottom: 1px solid #E8F1EA;
+}
+
+ul.account{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+div.mediaoptions{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-right: 155px;
+}
+
+ul.smlinks{
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+button.sm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 1px;
+    background: #fff;
+    border-radius: 4px;
+    border: 2px solid rgba(70, 163, 88, 0.20);
+}
+
+div.paymentMethods{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
 }

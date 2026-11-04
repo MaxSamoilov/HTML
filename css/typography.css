@@ -9,6 +9,62 @@ li.MenuListItem{
     font-weight: 400;
     line-height: normal;
     border-bottom: 3px solid transparent;
+    position: relative;
+}
+
+li.MenuListItem.active{
+    font-weight: 700;
+    border-color: #46A358;
+}
+
+li.MenuListItem:hover{
+    font-weight: 700;
+}
+
+li.subItems1{
+    display: none;
+    justify-content:space-between;
+    align-items: center;
+    min-width: 188px;
+    padding: 8px 14px;
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(237, 246, 238, 1);
+    position: relative;
+}
+
+li.MenuListItem:hover li.subItems1{
+    display: flex;
+}
+
+li.subItems1:hover{
+    background-color: rgba(26, 113, 42, 1);
+    color: #FFF;
+    font-weight: 700;
+}
+
+li.subItems2{
+    min-width: 188px;
+    display: none;
+    padding: 8px 14px;
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(237, 246, 238, 1);
+}
+
+li.subItems2:hover{
+    background-color: rgba(26, 113, 42, 1);
+    color: #FFF;
+    font-weight: 700;
+}
+
+
+li.subItems1.active:hover li.subItems2{
+    display: flex;
 }
 
 h1.homePage{
@@ -20,6 +76,8 @@ h1.homePage{
     line-height: 70px; /* 100% */
     text-transform: uppercase;
     margin: 7px 0;
+    width: 78%;
+
 }
 
 h1.homePage::after{
@@ -52,6 +110,7 @@ p.mainText{
     font-weight: 300;
     line-height: 24px; /* 171.429% */
     margin-bottom: 45px;
+    width: 81%;
 }
 
 /* SHOP */
@@ -80,6 +139,7 @@ h3.filtersHead{
     font-style: normal;
     font-weight: 700;
     line-height: 16px; /* 88.889% */
+    margin-bottom: 30px;
 }
 
 li.filtersOption{
@@ -183,6 +243,7 @@ p.discount{
 }
 
 h3.offerHeader{
+    max-width: 33%;
     color: #3D3D3D;
     text-align: right;
     font-family: "Cera Pro";
@@ -191,9 +252,11 @@ h3.offerHeader{
     font-weight: 900;
     line-height: 24px; /* 133.333% */
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 p.offerText{
+    max-width: 51%;
     color: #727272;
     text-align: right;
     font-family: "Cera Pro";
@@ -201,4 +264,125 @@ p.offerText{
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 171.429% */
+    margin-bottom: 25px;
+}
+
+h2.blockHeader{
+    color: #3D3D3D;
+    text-align: center;
+    font-family: "Cera Pro";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 53.333% */
+}
+
+p.dicription{
+    color: #727272;
+    text-align: center;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+}
+
+p.publicatioDate{
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+}
+
+h3.topicHeader{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+    max-width: 202px;
+}
+
+p.topicIntro{
+    color: #727272;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+h3.capadlityName{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 94.118% */
+}
+
+p.capadilityDiscription{
+    color: #727272;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    min-width: 206px;
+}
+
+p.formDiscription{
+    color: #727272;
+    font-family: "Cera Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 169.231% */
+    max-width: 354px;
+}
+
+span.inputSpan{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+    margin-bottom: 18px;
+}
+
+::placeholder{
+    color: #ACACAC;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+}
+
+p.contactText{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    max-width: 176px;
+}
+
+.contactText.phone{
+    color: #fff;
+}
+
+p.copyright{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 214.286% */
+    text-align: center;
 }
