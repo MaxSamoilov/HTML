@@ -1,6 +1,6 @@
 /* HOME PAGE */
 
-button.headerButton {
+button.login {
     font-family: "Cera Pro";
     display: flex;
     align-items: center;
@@ -11,8 +11,18 @@ button.headerButton {
     padding: 7px 17px 8px;
     border-radius: 6px;
     background: #46A358;
-    margin-bottom: 8px;
 }
+
+button.cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    fill: #3D3D3D;
+    padding: 3px;
+}
+
 
 button.cta{
     font-family: "Cera Pro";
@@ -50,6 +60,18 @@ button.thumb{
     padding: 8px 25px;
 }
 
+button.cardbutton{
+    display: flex;
+    border: none;
+    border-radius: 4px;
+    background: #fff;
+    padding: 7px;
+}
+
+button.cardbutton:hover{
+    color: #46A358;
+}
+
 button.pagination{
     width: 35px;
     height: 35px;
@@ -69,4 +91,62 @@ button.pagination.active{
     background: #46A358;
     color: #FFF;
     font-weight: 700;
+}
+
+/* THIRD */
+
+button.extraOffers{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border: none;
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    padding: 12px 28px;
+}
+
+button.topicButton{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    border: none;
+    background-color: transparent;
+}
+
+input.email{
+    display: flex;
+    align-self: flex-end;
+    min-width: 269px;
+    height: 40px;
+    border-radius: 6px 0 0 6px;
+    border: none;
+    background-color: #FFF;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+    padding: 12px;
+}
+
+input.submit{
+    display: flex;
+    border-radius: 0 6px 6px 0;
+    border: none;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+    padding: 12px 26px;
 }
