@@ -6,6 +6,45 @@
     box-sizing: border-box;
 }
 
+.preloader {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    z-index: 99999;
+    overflow: hidden;
+    animation: hidePreloader 0.12s ease 2.68s forwards;
+}
+
+.preloader__logo {
+    display: block;
+    width: 35px;
+    height: 35px;
+    transform-box: view-box;
+    transform-origin: center center;
+    will-change: transform;
+    animation: zoomThrough 0.8s cubic-bezier(0.65, 0, 0.9, 1) 2s 1 both;
+}
+
+@keyframes zoomThrough {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(160);
+    }
+}
+
+@keyframes hidePreloader {
+    to {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
 /* HOME PAGE */
 
 .entryContainer{
@@ -213,12 +252,10 @@ div.text{
     fill: #46A358;
 }
 
-div.pagination{
-    align-self: flex-end;
-}
 
 ul.pagination{
     display: flex;
+    justify-content: flex-end;
     gap: 10px;
 }
 
@@ -403,4 +440,45 @@ div.paymentMethods{
     display: flex;
     flex-direction: column;
     gap: 13px;
+}
+
+/* REGISTRATION */
+
+div.registrationForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 100px;
+    border-bottom: 10px;
+    border-color: #46A358;
+}
+
+ul.switch{
+    display: flex;
+    gap: 12px;
+    padding: 0 72px;
+    margin-bottom: 40px;
+}
+
+li.option{
+    border-right: 2px solid #46A358;
+    padding-right: 14px;
+}
+
+li.option.second{
+    border: none;
+}
+
+ul.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 36px;
+}
+
+ul.optionsList{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-bottom: 40px;
 }

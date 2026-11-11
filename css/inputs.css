@@ -1,5 +1,24 @@
 /* HOME PAGE */
 
+.MenuListItem{
+    font-family: "Cera Pro";
+    padding: 8px 0 25px;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.MenuListItem:has(.filterRadio:checked){
+    font-weight: 700;
+    border-color: #46A358;
+}
+
 button.login {
     font-family: "Cera Pro";
     display: flex;
@@ -11,6 +30,14 @@ button.login {
     padding: 7px 17px 8px;
     border-radius: 6px;
     background: #46A358;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+button.login:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.25);
 }
 
 button.cart{
@@ -21,6 +48,9 @@ button.cart{
     background: transparent;
     fill: #3D3D3D;
     padding: 3px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
 }
 
 
@@ -39,12 +69,69 @@ button.cta{
     background: #46A358;
     padding:  9px 26px 11px;
     margin-bottom: 85px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+button.cta:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.25);
 }
 
 /* SHOP */
 
+.filtersOption{
+   display: flex;
+   justify-content: space-between;
+   color: #3D3D3D;
+   font-family: "Cera Pro";
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 40px;
+   cursor: pointer;
+   transition-duration: .2s;
+   transition-timing-function: ease-out;
+}
+
+.filtersOption:has(.filterRadio:checked){
+    color: #46A358;
+    font-weight: 700;
+}
+
+.filterRadio {
+    display: none;
+}
+
+.count{
+    font-weight: inherit;
+}
+
+.itemsType{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+    border-bottom: 2px solid transparent;
+    padding-bottom: 7px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+.itemsType:has(.filterRadio:checked){
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-weight: 700;
+    border-color: #46A358;
+}
+
 input.thumb{
     width: 215px;
+    cursor: pointer;
 }
 
 button.thumb{
@@ -58,6 +145,14 @@ button.thumb{
     font-weight: 700;
     line-height: 20px; /* 125% */
     padding: 8px 25px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+button.thumb:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.25);
 }
 
 button.cardbutton{
@@ -66,13 +161,21 @@ button.cardbutton{
     border-radius: 4px;
     background: #fff;
     padding: 7px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
 }
 
 button.cardbutton:hover{
     color: #46A358;
+    transform: scale(1.05);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.25);
 }
 
-button.pagination{
+.paginationElement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 35px;
     height: 35px;
     border-radius: 4px;
@@ -84,9 +187,12 @@ button.pagination{
     font-style: normal;
     font-weight: 300;
     line-height: 16px; /* 88.889% */
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
 }
 
-button.pagination.active{
+.paginationElement:has(.filterRadio:checked){
     border-radius: 4px;
     background: #46A358;
     color: #FFF;
@@ -109,6 +215,14 @@ button.extraOffers{
     font-weight: 500;
     line-height: 20px; /* 142.857% */
     padding: 12px 28px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+button.extraOffers:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.25);
 }
 
 button.topicButton{
@@ -123,6 +237,9 @@ button.topicButton{
     line-height: 16px; /* 114.286% */
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
 }
 
 input.email{
@@ -135,6 +252,9 @@ input.email{
     background-color: #FFF;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
     padding: 12px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
 }
 
 input.submit{
@@ -149,4 +269,53 @@ input.submit{
     font-weight: 700;
     line-height: 16px; /* 88.889% */
     padding: 12px 26px;
+    cursor: pointer;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+}
+
+/* REGISTRATION */
+
+button.loginbutton{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 80% */
+    border: none;
+    background-color: transparent;
+}
+
+button.loginbutton:hover{
+    font-weight: 700;
+    color: #1b5627;
+}
+
+button.loginbutton.active{
+    color: #46A358;
+    font-family: "Cera Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 80% */
+}
+
+input.register{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    background-color: transparent;
+    padding: 12px 14px;
+}
+
+input.button{
+    background-color:#46A358;
+    color: #FFF;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 100% */
 }

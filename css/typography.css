@@ -1,22 +1,5 @@
 /* HOME PAGE */
 
-li.MenuListItem{
-    font-family: "Cera Pro";
-    padding: 8px 0 25px;
-    color: #3D3D3D;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border-bottom: 3px solid transparent;
-    position: relative;
-}
-
-li.MenuListItem.active{
-    font-weight: 700;
-    border-color: #46A358;
-}
-
 li.MenuListItem:hover{
     font-weight: 700;
 }
@@ -115,16 +98,6 @@ p.mainText{
 
 /* SHOP */
 
-li.itemsType{
-    color: #3D3D3D;
-    font-family: "Cera Pro";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px; /* 106.667% */
-    border-bottom: 2px solid transparent;
-    padding-bottom: 7px;
-}
 
 li.itemsType.active{
     border-color: #46A358;
@@ -142,23 +115,7 @@ h3.filtersHead{
     margin-bottom: 30px;
 }
 
-li.filtersOption{
-    color: #3D3D3D;
-    font-family: "Cera Pro";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-}
 
-li.filtersOption.active{
-    color: #46A358;
-    font-family: "Cera Pro";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px; /* 266.667% */
-}
 
 label.SortBy{
     color: #3D3D3D;
@@ -385,4 +342,15 @@ p.copyright{
     font-weight: 400;
     line-height: 30px; /* 214.286% */
     text-align: center;
+}
+
+/* REGISTRATION */
+
+h1.registrationHeader{
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 123.077% */
 }
